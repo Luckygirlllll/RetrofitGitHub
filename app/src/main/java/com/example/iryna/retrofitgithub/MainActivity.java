@@ -48,7 +48,7 @@ public class MainActivity extends Activity implements Callback<GithubUser> {
         int code = response.code();
         if (code == 200) {
             GithubUser user = response.body();
-            Toast.makeText(this, "Got the user: " + user.name +" , Location: "+user.location, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Got the user: " + user.name +" , Location: "+user.location + " , Public repos: "+user.public_repos+", Email: "+user.email , Toast.LENGTH_LONG).show();
         } else {
             Toast.makeText(this, "Did not work: " + String.valueOf(code), Toast.LENGTH_LONG).show();
         }

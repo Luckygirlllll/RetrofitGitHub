@@ -7,6 +7,8 @@ public class GithubUser {
     String login;
     String name;
     String location;
+    String public_repos;
+    String email;
 
     @Override
     public String toString() {
